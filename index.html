@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayach Youssef — Computer Engineer</title>
+  <meta name="description" content="Computer Engineering Student at FST Settat · Full-Stack Developer · Berrechid, Morocco. I learn fast and ship." />
+  <meta name="author" content="Ayach Youssef" />
+  <meta property="og:title" content="Ayach Youssef — Computer Engineer" />
+  <meta property="og:description" content="Computer Engineering Student. I learn fast and ship." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts: Bodoni Moda · Syne · Space Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Syne:wght@400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-initials">AY</span>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+
+    <a href="#home" class="nav-logo" aria-label="Ayach Youssef — Home">AY</a>
+
+    <ul class="nav-links" id="navLinks" role="list">
+      <li><a href="#about"     class="nav-link">About</a></li>
+      <li><a href="#skills"    class="nav-link">Skills</a></li>
+      <li><a href="#projects"  class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact"   class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="assets/cv/Ayach_Youssef_CV.pdf" download class="nav-cv">CV ↓</a>
+      <a href="#contact" class="nav-hire">Hire Me</a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+  </nav>
+
+
+  <!-- ══════════════════════════════════════
+       HERO  (dark canvas)
+  ══════════════════════════════════════ -->
+  <section class="hero" id="home" aria-label="Introduction">
+
+    <div class="hero-status">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span>Available for Opportunities</span>
+    </div>
+
+    <!-- Giant name — fills viewport -->
+    <div class="hero-name-block" aria-label="Ayach Youssef">
+      <div class="name-row">
+        <div class="name-clip">
+          <span class="name-word name-word--fill">Ayach</span>
+        </div>
+      </div>
+      <div class="name-row name-row--right">
+        <div class="name-clip">
+          <span class="name-word name-word--outline">Youssef</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rule with inline label -->
+    <div class="hero-rule-wrap" aria-hidden="true">
+      <div class="hero-rule-line"></div>
+      <div class="hero-rule-tags">
+        <span>Computer Engineering</span>
+        <span class="rule-dot">·</span>
+        <span>FST Settat</span>
+        <span class="rule-dot">·</span>
+        <span>Morocco</span>
+      </div>
+    </div>
+
+    <!-- Tagline + CTAs -->
+    <div class="hero-lower">
+      <p class="hero-tagline">
+        I learn fast<em>&amp;</em>I ship.
+      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="cta-dark">
+          Explore Work <span aria-hidden="true">→</span>
+        </a>
+        <a href="#contact" class="cta-ghost">Let's Talk</a>
+      </div>
+    </div>
+
+    <!-- Floor -->
+    <div class="hero-floor" aria-hidden="true">
+      <span class="hero-floor-left">© 2026</span>
+      <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-track"><div class="scroll-thumb"></div></div>
+      </div>
+      <span class="hero-floor-right">Berrechid, Morocco</span>
+    </div>
+
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       MARQUEE TICKER BAND
+  ══════════════════════════════════════ -->
+  <div class="marquee-band" aria-hidden="true" role="presentation">
+    <div class="marquee-track">
+      <div class="marquee-items">
+        <span>Computer Engineering</span><b>✦</b>
+        <span>Full-Stack Development</span><b>✦</b>
+        <span>System Design</span><b>✦</b>
+        <span>Linux &amp; Networking</span><b>✦</b>
+        <span>SQL &amp; Databases</span><b>✦</b>
+        <span>React &amp; Node.js</span><b>✦</b>
+        <span>Docker &amp; DevOps</span><b>✦</b>
+        <span>Problem Solving</span><b>✦</b>
+        <span>Fast Learner</span><b>✦</b>
+        <span>Ships Clean Code</span><b>✦</b>
+      </div>
+      <div class="marquee-items" aria-hidden="true">
+        <span>Computer Engineering</span><b>✦</b>
+        <span>Full-Stack Development</span><b>✦</b>
+        <span>System Design</span><b>✦</b>
+        <span>Linux &amp; Networking</span><b>✦</b>
+        <span>SQL &amp; Databases</span><b>✦</b>
+        <span>React &amp; Node.js</span><b>✦</b>
+        <span>Docker &amp; DevOps</span><b>✦</b>
+        <span>Problem Solving</span><b>✦</b>
+        <span>Fast Learner</span><b>✦</b>
+        <span>Ships Clean Code</span><b>✦</b>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════
+       ABOUT  (split panel)
+  ══════════════════════════════════════ -->
+  <section class="about-section" id="about" aria-label="About me">
+    <div class="about-grid">
+
+      <!-- Left dark panel: photo -->
+      <aside class="about-dark-panel">
+
+        <div class="photo-frame">
+          <!--
+            ADD YOUR PHOTO:
+            Change src="" to src="assets/img/photo.jpg"
+            Best size: 600×800px, portrait orientation
+          -->
+          <img
+            src="/assets/img/photo.jpeg"
+            alt="Photo of Ayach Youssef"
+            class="photo-img"
+            id="profilePhoto"
+          />
+          <div class="photo-placeholder" id="photoPlaceholder">
+            <span class="ph-initials">AY</span>
+            <p class="ph-note">src="/assets/img/photo.jpeg"</p>
+          </div>
+          <div class="photo-corner photo-corner--tl" aria-hidden="true"></div>
+          <div class="photo-corner photo-corner--br" aria-hidden="true"></div>
+        </div>
+
+        <div class="dark-panel-socials">
+          <a href="https://github.com/YoussefAyach01" target="_blank" rel="noopener" class="dp-social">
+            GitHub <span aria-hidden="true">↗</span>
+          </a>
+          <span class="dp-social-sep" aria-hidden="true">|</span>
+          <a href="https://www.linkedin.com/in/youssefayach/" target="_blank" rel="noopener" class="dp-social">
+            LinkedIn <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+      </aside>
+
+      <!-- Right light panel: text -->
+      <div class="about-light-panel">
+
+        <header>
+          <p class="section-eyebrow reveal">01 — About</p>
+          <h2 class="section-title reveal">
+            Who I am &amp;<br />what drives me.
+          </h2>
+        </header>
+
+        <blockquote class="pull-quote reveal reveal-d1">
+          "I learn fast and I ship —<br />
+          that's the one thing I want every<br />
+          recruiter to remember about me."
+        </blockquote>
+
+        <p class="about-para reveal reveal-d2">
+          I am a Computer Engineering student at FST Settat, Morocco,
+          grounded in mathematics, algorithmics, and full-stack development.
+          From CPU architecture simulations to network infrastructure design,
+          I work across the full technical spectrum.
+        </p>
+        <p class="about-para reveal reveal-d3">
+          My drive is simple: technology should save people time. Everything
+          I build is crafted with that purpose — clean architecture,
+          purposeful code, and real-world impact.
+        </p>
+
+        <div class="about-stats">
+          <div class="stat-block reveal">
+            <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
+            <span class="stat-lbl">Projects</span>
+          </div>
+          <div class="stat-sep" aria-hidden="true"></div>
+          <div class="stat-block reveal reveal-d1">
+            <span class="stat-num" data-target="8">0</span><span class="stat-plus">+</span>
+            <span class="stat-lbl">Languages</span>
+          </div>
+          <div class="stat-sep" aria-hidden="true"></div>
+          <div class="stat-block reveal reveal-d2">
+            <span class="stat-num" data-target="3">0</span>
+            <span class="stat-lbl">Years Study</span>
+          </div>
+        </div>
+
+        <div class="lang-row reveal reveal-d3">
+          <span class="lang-chip">🇲🇦 Arabic — Native</span>
+          <span class="lang-chip">🇫🇷 French — Fluent</span>
+          <span class="lang-chip">🇬🇧 English — Intermediate</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       SKILLS
+  ══════════════════════════════════════ -->
+  <section class="skills-section" id="skills" aria-label="Technical skills">
+    <div class="skills-inner">
+
+      <header class="skills-header">
+        <p class="section-eyebrow reveal">02 — Skills</p>
+        <h2 class="section-title reveal">Technical Toolkit</h2>
+      </header>
+
+      <div class="skills-grid">
+
+        <article class="skill-card reveal" aria-label="Programming Languages">
+          <span class="skill-card-num" aria-hidden="true">01</span>
+          <h3 class="skill-card-title">Languages</h3>
+          <ul class="skill-pills" role="list">
+            <li>C</li><li>Java</li><li>Python</li><li>JavaScript</li>
+            <li>PHP</li><li>SQL</li><li>PL/SQL</li><li>Bash</li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal reveal-d1" aria-label="Web Development">
+          <span class="skill-card-num" aria-hidden="true">02</span>
+          <h3 class="skill-card-title">Web Development</h3>
+          <ul class="skill-pills" role="list">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+            <li>React</li><li>Node.js</li><li>PHP</li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal reveal-d2" aria-label="Systems and Networks">
+          <span class="skill-card-num" aria-hidden="true">03</span>
+          <h3 class="skill-card-title">Systems &amp; Networks</h3>
+          <ul class="skill-pills" role="list">
+            <li>Linux</li><li>Ubuntu</li><li>DNS / DHCP</li>
+            <li>VLAN / WAN</li><li>Cisco PT</li><li>Routing</li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal reveal-d3" aria-label="Databases and Tools">
+          <span class="skill-card-num" aria-hidden="true">04</span>
+          <h3 class="skill-card-title">Databases &amp; Tools</h3>
+          <ul class="skill-pills" role="list">
+            <li>SQL</li><li>PL/SQL</li><li>Oracle</li>
+            <li>Docker</li><li>Git</li><li>VS Code</li><li>Eclipse</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       PROJECTS
+  ══════════════════════════════════════ -->
+  <section class="projects-section" id="projects" aria-label="Selected projects">
+    <div class="projects-inner">
+
+      <header class="projects-header">
+        <p class="section-eyebrow reveal">03 — Projects</p>
+        <h2 class="section-title reveal">Selected Work</h2>
+        <p class="projects-sub reveal reveal-d1">Five projects across systems, databases, networks, and web.</p>
+      </header>
+
+      <ol class="project-list" role="list">
+
+        <li class="project-item reveal" data-idx="01">
+          <a href="https://github.com/YoussefAyach01" target="_blank" rel="noopener" class="project-link">
+            <div class="pi-row">
+              <div class="pi-left">
+                <span class="pi-num" aria-hidden="true">01</span>
+                <div>
+                  <h3 class="pi-title">Motorola 6809 Processor Simulator</h3>
+                  <span class="pi-cat">Systems · Architecture</span>
+                </div>
+              </div>
+              <div class="pi-right">
+                <div class="pi-tags">
+                  <span>Python</span><span>Computer Architecture</span>
+                </div>
+                <span class="pi-arrow" aria-hidden="true">↗</span>
+              </div>
+            </div>
+            <div class="pi-desc">
+              <p>Reproduced the full Motorola 6809 CPU architecture in software — implementing instruction fetch, decode, and execution cycle from scratch. A deep dive into how processors think at the binary level.</p>
+            </div>
+          </a>
+        </li>
+
+        <li class="project-item reveal reveal-d1" data-idx="02">
+          <a href="https://github.com/YoussefAyach01" target="_blank" rel="noopener" class="project-link">
+            <div class="pi-row">
+              <div class="pi-left">
+                <span class="pi-num" aria-hidden="true">02</span>
+                <div>
+                  <h3 class="pi-title">Linux Server Administration Lab</h3>
+                  <span class="pi-cat">Systems · Linux</span>
+                </div>
+              </div>
+              <div class="pi-right">
+                <div class="pi-tags">
+                  <span>Linux</span><span>Bash</span><span>Virtual Machines</span>
+                </div>
+                <span class="pi-arrow" aria-hidden="true">↗</span>
+              </div>
+            </div>
+            <div class="pi-desc">
+              <p>Configured Ubuntu VMs for full server administration — user and group management, file permissions, service setup, cron jobs, and real-time monitoring entirely via Bash scripting.</p>
+            </div>
+          </a>
+        </li>
+
+        <li class="project-item reveal reveal-d2" data-idx="03">
+          <a href="https://github.com/YoussefAyach01" target="_blank" rel="noopener" class="project-link">
+            <div class="pi-row">
+              <div class="pi-left">
+                <span class="pi-num" aria-hidden="true">03</span>
+                <div>
+                  <h3 class="pi-title">Advanced Database Management System</h3>
+                  <span class="pi-cat">Database · Backend</span>
+                </div>
+              </div>
+              <div class="pi-right">
+                <div class="pi-tags">
+                  <span>SQL</span><span>PL/SQL</span><span>Oracle</span><span>Docker</span>
+                </div>
+                <span class="pi-arrow" aria-hidden="true">↗</span>
+              </div>
+            </div>
+            <div class="pi-desc">
+              <p>Designed relational schemas with stored procedures, triggers, cursors, and query optimisation. Deployed Oracle SQL Developer inside Docker containers for reproducible environments.</p>
+            </div>
+          </a>
+        </li>
+
+        <li class="project-item reveal reveal-d3" data-idx="04">
+          <a href="https://github.com/YoussefAyach01" target="_blank" rel="noopener" class="project-link">
+            <div class="pi-row">
+              <div class="pi-left">
+                <span class="pi-num" aria-hidden="true">04</span>
+                <div>
+                  <h3 class="pi-title">Computer Networking Simulation</h3>
+                  <span class="pi-cat">Networking · Simulation</span>
+                </div>
+              </div>
+              <div class="pi-right">
+                <div class="pi-tags">
+                  <span>Cisco PT</span><span>VLAN</span><span>DNS/DHCP</span>
+                </div>
+                <span class="pi-arrow" aria-hidden="true">↗</span>
+              </div>
+            </div>
+            <div class="pi-desc">
+              <p>Designed and simulated multi-VLAN enterprise networks with inter-VLAN routing, DNS, DHCP, and WAN links using Cisco Packet Tracer.</p>
+            </div>
+          </a>
+        </li>
+
+        <li class="project-item reveal" data-idx="05">
+          <a href="https://github.com/YoussefAyach01" target="_blank" rel="noopener" class="project-link">
+            <div class="pi-row">
+              <div class="pi-left">
+                <span class="pi-num" aria-hidden="true">05</span>
+                <div>
+                  <h3 class="pi-title">Web Development Projects</h3>
+                  <span class="pi-cat">Web · Full-Stack</span>
+                </div>
+              </div>
+              <div class="pi-right">
+                <div class="pi-tags">
+                  <span>React</span><span>Node.js</span><span>PHP</span><span>MySQL</span>
+                </div>
+                <span class="pi-arrow" aria-hidden="true">↗</span>
+              </div>
+            </div>
+            <div class="pi-desc">
+              <p>Built dynamic web applications with server-side logic, REST APIs, session management, and responsive UI — integrating PHP back-ends with React front-ends and relational databases.</p>
+            </div>
+          </a>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       EDUCATION
+  ══════════════════════════════════════ -->
+  <section class="edu-section" id="education" aria-label="Education">
+    <div class="edu-inner">
+
+      <header class="edu-header">
+        <p class="section-eyebrow reveal">04 — Education</p>
+        <h2 class="section-title reveal">Academic Path</h2>
+      </header>
+
+      <div class="edu-list">
+
+        <div class="edu-entry reveal">
+          <div class="edu-dates" aria-label="2025 to present">
+            <span>2025</span>
+            <span class="edu-dates-sep">—</span>
+            <span>Now</span>
+          </div>
+          <div class="edu-spine" aria-hidden="true">
+            <div class="edu-node edu-node--live"></div>
+            <div class="edu-stem"></div>
+          </div>
+          <div class="edu-body">
+            <span class="edu-badge">Current</span>
+            <h3 class="edu-degree">
+              Licence ST — Computer Engineering
+              <abbr class="edu-abbr" title="Licence Sciences et Génies Informatique">(LSGI)</abbr>
+            </h3>
+            <p class="edu-school">Faculty of Sciences and Technology · Settat</p>
+            <ul class="edu-modules">
+              <li>Advanced Databases — SQL &amp; PL/SQL</li>
+              <li>Object-Oriented Programming in Java</li>
+              <li>Web Development — HTML / CSS / JS / PHP</li>
+              <li>Computer Networks &amp; Operating Systems</li>
+              <li>System Administration · UML &amp; Software Engineering</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="edu-entry reveal reveal-d1">
+          <div class="edu-dates" aria-label="2023 to 2025">
+            <span>2023</span>
+            <span class="edu-dates-sep">—</span>
+            <span>2025</span>
+          </div>
+          <div class="edu-spine" aria-hidden="true">
+            <div class="edu-node"></div>
+            <div class="edu-stem"></div>
+          </div>
+          <div class="edu-body">
+            <h3 class="edu-degree">
+              DEUST — Maths, Computer Science &amp; Physics
+              <abbr class="edu-abbr" title="Diplôme d'Études Universitaires Scientifiques et Techniques">(MIP)</abbr>
+            </h3>
+            <p class="edu-school">Faculty of Sciences and Technology · Settat</p>
+            <ul class="edu-modules">
+              <li>Data Structures in C · Algorithms · Programming in C</li>
+              <li>Probability &amp; Statistics · Numerical Analysis</li>
+              <li>Electromagnetism · Electronics · Thermodynamics</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="edu-entry reveal reveal-d2">
+          <div class="edu-dates" aria-label="Before 2023">
+            <span>Pre</span>
+            <span class="edu-dates-sep">—</span>
+            <span>2023</span>
+          </div>
+          <div class="edu-spine" aria-hidden="true">
+            <div class="edu-node"></div>
+          </div>
+          <div class="edu-body">
+            <h3 class="edu-degree">Baccalaureate — Science Track</h3>
+            <p class="edu-school">Morocco &nbsp;·&nbsp; <strong>Mention: Good</strong></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       CONTACT  (dark canvas)
+  ══════════════════════════════════════ -->
+  <section class="contact-section" id="contact" aria-label="Contact">
+    <div class="contact-inner">
+
+      <header class="contact-header">
+        <p class="section-eyebrow section-eyebrow--gold reveal">05 — Contact</p>
+        <h2 class="contact-heading reveal">
+          Let's build<br />
+          <em>something</em><br />
+          together.
+        </h2>
+      </header>
+
+      <div class="contact-grid">
+
+        <!-- Info column -->
+        <div class="contact-info">
+          <p class="contact-intro reveal reveal-d1">
+            Currently seeking internship and collaboration opportunities.
+            If you have a project in mind or just want to connect — reach out.
+          </p>
+
+          <ul class="contact-rows reveal reveal-d2">
+            <li>
+              <a href="mailto:ayach.you.fst@uhp.ac.ma" class="cr-row">
+                <span class="cr-label">Email</span>
+                <span class="cr-val">ayach.you.fst@uhp.ac.ma</span>
+                <span class="cr-arr" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+212698869977" class="cr-row">
+                <span class="cr-label">Phone</span>
+                <span class="cr-val">+212 698 869 977</span>
+                <span class="cr-arr" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <div class="cr-row cr-row--static">
+                <span class="cr-label">Location</span>
+                <span class="cr-val">Berrechid, Morocco</span>
+              </div>
+            </li>
+            <li>
+              <a href="https://github.com/YoussefAyach01" target="_blank" rel="noopener" class="cr-row">
+                <span class="cr-label">GitHub</span>
+                <span class="cr-val">YoussefAyach01</span>
+                <span class="cr-arr" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/youssefayach/" target="_blank" rel="noopener" class="cr-row">
+                <span class="cr-label">LinkedIn</span>
+                <span class="cr-val">youssefayach</span>
+                <span class="cr-arr" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+
+          <a href="assets/cv/Ayach_Youssef_CV.pdf" download class="cv-download-btn reveal reveal-d3">
+            Download CV <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <!-- Form column -->
+        <div class="contact-form-wrap reveal reveal-d2">
+          <form class="contact-form" id="contactForm" novalidate>
+
+            <div class="form-2col">
+              <div class="form-field">
+                <label class="form-lbl" for="f-name">Name</label>
+                <input type="text" id="f-name" class="form-input" placeholder="Your full name" autocomplete="name" />
+              </div>
+              <div class="form-field">
+                <label class="form-lbl" for="f-email">Email</label>
+                <input type="email" id="f-email" class="form-input" placeholder="you@company.com" autocomplete="email" />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="form-lbl" for="f-subject">Subject</label>
+              <input type="text" id="f-subject" class="form-input" placeholder="Internship · Project · Collaboration" />
+            </div>
+
+            <div class="form-field">
+              <label class="form-lbl" for="f-message">Message</label>
+              <textarea id="f-message" class="form-textarea" placeholder="Tell me about the opportunity — I read everything."></textarea>
+            </div>
+
+            <button type="button" class="form-submit-btn" id="submitBtn">
+              <span class="fsb-text">Send Message</span>
+              <span class="fsb-arrow" aria-hidden="true">→</span>
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-name">Ayach Youssef</span>
+        <span class="footer-sub">Computer Engineer · Morocco</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer links">
+        <a href="https://github.com/YoussefAyach01" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/youssefayach/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:ayach.you.fst@uhp.ac.ma">Email</a>
+        <a href="#home" aria-label="Back to top">Top ↑</a>
+      </nav>
+      <p class="footer-copy">© 2026 — Built with purpose.</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
